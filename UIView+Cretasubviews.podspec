@@ -12,9 +12,9 @@ s.name = 'UIView+Cretasubviews'
 s.version = '1.0.1'
 s.license = 'MIT'
 s.summary = 'A Text in iOS.'
-s.homepage = 'https://github.com/zhoubo6419/UIView+Cretasubviews'
+s.homepage = 'https://github.com/zhoubo6419/UIView-Cretasubviews'
 s.authors = { 'zhoubo6419' => '1436640281@qq.com' }
-s.source = { :git => "https://github.com/zhoubo6419/UIView+Cretasubviews.git", :tag => "1.0.1"}
+s.source = { :git => "https://github.com/zhoubo6419/UIView-Cretasubviews.git", :tag => "1.0.1"}
 s.requires_arc = true
 s.ios.deployment_target = '7.0'
 s.framework  = "UIKit"

@@ -10,7 +10,7 @@
 
 @interface UIView (Cretasubviews)
 
-+ (UIButton *)creatsButton:(NSString *)imageName frame:(CGRect)frame title:(NSString *)title backgroundCorlor:(UIColor *)colors tintColor:(UIColor *)tintColors tag:(NSInteger)tags action:(SEL)action;
++ (UIButton *)creatsButton:(NSString *)imageName frame:(CGRect)frame title:(NSString *)title backgroundCorlor:(UIColor *)colors tintColor:(UIColor *)tintColors tag:(NSInteger)tags action:(SEL)action superView:(UIView *)superView ids:(id)ids;
 
 + (UILabel *)createLabelFrame:(CGRect)rect  textColor:(UIColor *)color  textFont:(UIFont *)font textString:(NSString *)textString  textAlignment:(NSTextAlignment)textAlignment;
 

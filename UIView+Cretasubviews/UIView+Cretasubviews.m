@@ -10,7 +10,7 @@
 
 @implementation UIView (Cretasubviews)
 
-+ (UIButton *)creatsButton:(NSString *)imageName frame:(CGRect)frame title:(NSString *)title backgroundCorlor:(UIColor *)colors tintColor:(UIColor *)tintColors tag:(NSInteger)tags action:(SEL)action{
++ (UIButton *)creatsButton:(NSString *)imageName frame:(CGRect)frame title:(NSString *)title backgroundCorlor:(UIColor *)colors tintColor:(UIColor *)tintColors tag:(NSInteger)tags action:(SEL)action superView:(UIView *)superView ids:(id)ids{
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame =frame;
@@ -19,7 +19,8 @@
     [button setTintColor:tintColors];
     [button setTitle:title forState:UIControlStateNormal];
     button.backgroundColor = colors;
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [superView addSubview:button];
+    [button addTarget:ids action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
